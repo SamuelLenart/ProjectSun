@@ -15,5 +15,6 @@ public class Main {
         sun.addPlanet(mars);
         sun.addPlanet(jupiter);
         sun.addPlanet(uranus);
+        sun.printAllPlanets();
     }
 }

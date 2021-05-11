@@ -20,4 +20,10 @@ public class Sun {
     public void addPlanet(Planet planet){
         set.add(planet);
     }
+
+    public void printAllPlanets(){
+        for(Planet planet : set){
+            System.out.println(planet.getName());
+        }
+    }
 }
