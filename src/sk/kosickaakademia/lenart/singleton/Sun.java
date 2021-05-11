@@ -1,17 +1,23 @@
 package sk.kosickaakademia.lenart.singleton;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Sun {
     private static Sun instance = new Sun();
-    Planet planet;
-    List<Planet> planets = new ArrayList<>();
-    private Sun() {
 
+    private Set<Planet> set;
+
+    private Sun() {
+        set=new HashSet<>();
     }
     public static Sun getInstance(){
-        System.out.println("Planet added");
+
         return instance;
+    }
+    public void addPlanet(Planet planet){
+        set.add(planet);
     }
 }
